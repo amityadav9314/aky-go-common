@@ -1,4 +1,4 @@
-module aky-go-common
+module github.com/amityadav9314/aky-go-common
 
 go 1.26.2
 

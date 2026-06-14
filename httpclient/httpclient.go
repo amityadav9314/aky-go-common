@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"aky-go-common/logger"
+	"github.com/amityadav9314/aky-go-common/logger"
 )
 
 // ---------------------------------------------------------------------------

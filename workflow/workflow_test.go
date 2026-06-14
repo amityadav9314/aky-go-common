@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"aky-go-common/logger"
+	"github.com/amityadav9314/aky-go-common/logger"
 )
 
 // nopLogger silences engine log output during tests.

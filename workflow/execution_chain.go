@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"aky-go-common/logger"
+	"github.com/amityadav9314/aky-go-common/logger"
 )
 
 // ZipperFunc merges the result states of a parallel level into a single state.

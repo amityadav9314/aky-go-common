@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"aky-go-common/httpclient"
+	"github.com/amityadav9314/aky-go-common/httpclient"
 )
 
 type Client struct {
