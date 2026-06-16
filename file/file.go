@@ -136,6 +136,22 @@ func (f *Handler) Delete(fileName string) error {
 	return err
 }
 
+func (f *Handler) DeleteAll() error {
+	return os.RemoveAll(f.baseDir)
+}
+
+func (f *Handler) List() ([]string, error) {
+	files, err := os.ReadDir(f.baseDir)
+	if err != nil {
+		return nil, err
+	}
+	list := make([]string, 0, len(files))
+	for _, file := range files {
+		list = append(list, file.Name())
+	}
+	return list, nil
+}
+
 func (f *Handler) Clear(fileName string) error {
 	f.locker.Lock(fileName)
 	defer f.locker.Unlock(fileName)
